@@ -1,12 +1,37 @@
-:root {
-  font: 16px / 1 sans-serif;
+body {
+  padding-top: 10px;
+  font-size: 16px;
+  background-color: lightblue;
+  background-size: cover;
 }
 
 html {
-  height: 100%;
+  font-size: 100%;
 }
 
-body {
-  margin: 0;
-  min-height: 100%;
+@media (max-width: 900px) {
+  html {
+    font-size: 110%;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 130%;
+  }
+}
+
+h1,
+h2 {
+  border: 1px solid #000;
+  position: relative;
+  margin: auto;
+  margin-top: 10px;
+  width: 70%;
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+h1 {
+  width: 90%;
 }
